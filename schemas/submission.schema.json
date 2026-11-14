@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Submission",
+  "description": "提交记录（学生×挑战聚合）",
+  "type": "object",
+  "required": ["student", "challenge", "timestamp", "files", "status", "completeness"],
+  "properties": {
+    "student": {"type": "string", "description": "学生姓名（从文件命名规范提取）"},
+    "challenge": {"type": "string", "pattern": "^C[1-8]$"},
+    "timestamp": {"type": "string", "format": "date-time", "description": "首次检测到时间"},
+    "last_seen": {"type": "string", "format": "date-time", "description": "最后一次补充提交时间"},
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "path": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "status": {"enum": ["received", "reviewing", "accepted", "needs_revision"]},
+    "completeness": {
+      "type": "object",
+      "properties": {
+        "has_ai_log": {"type": "boolean"},
+        "file_count": {"type": "integer"},
+        "filename_matches_convention": {"type": "boolean"}
+      }
+    },
+    "source_msgs": {"type": "array", "items": {"type": "string"}}
+  }
+}

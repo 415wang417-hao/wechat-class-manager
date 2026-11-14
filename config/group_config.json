@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "group_name": "Elite20",
+  "teachers": [
+    {"wechat_id": "teacher_neolaf", "nickname": "王老师"}
+  ],
+  "students": [
+    {"wechat_id": "wx_wangyiran", "nickname": "王艺燃", "name": "王艺燃", "major": "AI+X"},
+    {"wechat_id": "wx_chenmo", "nickname": "陈默", "name": "陈默", "major": "AI+X"},
+    {"wechat_id": "wx_lihua", "nickname": "李华", "name": "李华", "major": "AI+X"},
+    {"wechat_id": "wx_zhaoxin", "nickname": "赵欣", "name": "赵欣", "major": "AI+X"},
+    {"wechat_id": "wx_sunlei", "nickname": "孙磊", "name": "孙磊", "major": "AI+X"},
+    {"wechat_id": "wx_zhouyu", "nickname": "周雨", "name": "周雨", "major": "AI+X"},
+    {"wechat_id": "wx_wuqiang", "nickname": "吴强", "name": "吴强", "major": "AI+X"},
+    {"wechat_id": "wx_zhengnan", "nickname": "郑楠", "name": "郑楠", "major": "AI+X"},
+    {"wechat_id": "wx_linxiao", "nickname": "林晓", "name": "林晓", "major": "AI+X"},
+    {"wechat_id": "wx_hejia", "nickname": "何佳", "name": "何佳", "major": "AI+X"},
+    {"wechat_id": "wx_luyao", "nickname": "陆遥", "name": "陆遥", "major": "AI+X"},
+    {"wechat_id": "wx_gaofei", "nickname": "高飞", "name": "高飞", "major": "AI+X"},
+    {"wechat_id": "wx_xuting", "nickname": "徐婷", "name": "徐婷", "major": "AI+X"},
+    {"wechat_id": "wx_maliang", "nickname": "马亮", "name": "马亮", "major": "AI+X"},
+    {"wechat_id": "wx_caoyue", "nickname": "曹悦", "name": "曹悦", "major": "AI+X"},
+    {"wechat_id": "wx_hanxin", "nickname": "韩鑫", "name": "韩鑫", "major": "AI+X"},
+    {"wechat_id": "wx_dengke", "nickname": "邓科", "name": "邓科", "major": "AI+X"},
+    {"wechat_id": "wx_fenglin", "nickname": "冯琳", "name": "冯琳", "major": "AI+X"},
+    {"wechat_id": "wx_xiaoyu", "nickname": "肖宇", "name": "肖宇", "major": "AI+X"},
+    {"wechat_id": "wx_yeqi", "nickname": "叶琪", "name": "叶琪", "major": "AI+X"}
+  ]
+}

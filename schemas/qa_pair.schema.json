@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QAPair",
+  "description": "从群消息沉淀的问答对",
+  "type": "object",
+  "required": ["question", "answer", "asked_by", "answered_by", "quality_score"],
+  "properties": {
+    "question": {"type": "string"},
+    "answer": {"type": "string"},
+    "asked_by": {"type": "string"},
+    "answered_by": {"type": "string"},
+    "topic_tags": {"type": "array", "items": {"type": "string"}, "description": "关联挑战"},
+    "quality_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "match_method": {"enum": ["reply_chain", "time_window"]},
+    "question_msg_id": {"type": "string"},
+    "answer_msg_id": {"type": "string"},
+    "timestamp": {"type": "string", "format": "date-time"}
+  }
+}

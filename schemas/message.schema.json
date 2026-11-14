@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Message",
+  "description": "wechat-class-manager 标准消息 schema（Layer 1 桥接输出）",
+  "type": "object",
+  "required": ["msg_id", "timestamp", "sender", "type", "content"],
+  "properties": {
+    "msg_id": {"type": "string", "description": "全局唯一消息 ID"},
+    "timestamp": {"type": "string", "format": "date-time", "description": "ISO 8601 时间戳"},
+    "sender": {
+      "type": "object",
+      "required": ["wechat_id", "nickname"],
+      "properties": {
+        "wechat_id": {"type": "string"},
+        "nickname": {"type": "string"}
+      }
+    },
+    "type": {"enum": ["text", "image", "file", "voice", "link", "system"]},
+    "content": {"type": "string"},
+    "media_ref": {"type": ["string", "null"], "description": "附件路径（如有）"},
+    "reply_to": {"type": ["string", "null"], "description": "被回复消息的 msg_id"},
+    "intent": {"enum": ["submission", "question", "answer", "announcement", "discussion", "resource", "social", "system"], "description": "Layer 2 分类结果"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "challenge_ref": {"type": ["array", "null"], "items": {"type": "string"}, "description": "关联挑战，如 [\"C5\"]"}
+  }
+}

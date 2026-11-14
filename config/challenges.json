@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "challenges": [
+    {"id": "C1", "name_cn": "翻译", "name_en": "Translation", "due_date": "2026-10-12", "required_files": ["翻译", "AI日志"]},
+    {"id": "C2", "name_cn": "论文", "name_en": "Paper", "due_date": "2026-10-19", "required_files": ["论文", "AI日志"]},
+    {"id": "C3", "name_cn": "群内参与", "name_en": "Group Participation", "due_date": "2026-10-26", "required_files": ["参与记录", "AI日志"]},
+    {"id": "C4", "name_cn": "技能分享", "name_en": "Skill Sharing", "due_date": "2026-11-02", "required_files": ["技能", "AI日志"]},
+    {"id": "C5", "name_cn": "GitHub 仓库", "name_en": "GitHub Repository", "due_date": "2026-11-09", "required_files": ["repo链接", "AI日志"]},
+    {"id": "C6", "name_cn": "Web App", "name_en": "Web Application", "due_date": "2026-11-16", "required_files": ["部署链接", "AI日志"]},
+    {"id": "C7", "name_cn": "内容传播", "name_en": "Content Distribution", "due_date": "2026-11-23", "required_files": ["文章", "AI日志"]},
+    {"id": "C8", "name_cn": "真实项目落地", "name_en": "Real-World Project Execution", "due_date": "2026-12-31", "required_files": ["proposal", "AI日志"]}
+  ]
+}
