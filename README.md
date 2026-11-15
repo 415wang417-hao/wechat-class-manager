@@ -29,7 +29,7 @@ python submission_detector.py output/linked.jsonl output/submissions.json
 python qa_extractor.py output/linked.jsonl output/qa_pairs.json
 python reporter.py output/linked.jsonl output/weekly_report.md
 
-# 3. 测试（20 个用例，含金标准准确率验证）
+# 3. 测试（23 个用例，含金标准准确率 + 可复现性回归）
 python -m unittest discover -s tests -v
 ```
 
