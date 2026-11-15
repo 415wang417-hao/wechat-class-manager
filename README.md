@@ -84,4 +84,23 @@ wechat-class-manager/
 - 数据源方案：[sjzar/chatlog](https://github.com/sjzar/chatlog)（HTTP API）、[freestylefly/wechat-cli](https://github.com/freestylefly/wechat-cli)
 - Skill 封装格式：Agent SKILL.md 惯例（触发词/IO/依赖）
 
-完整取舍分析见 `submission/王艺燃_C8_拿来说明.md`。
+完整取舍分析见 `docs/王艺燃_C8_拿来说明.md`。
+
+## C8 交付文档
+
+C8（真实项目落地）要求的过程与反思文档全部随仓库提供，位于 `docs/`：
+
+| 文件 | 内容 |
+|---|---|
+| [docs/王艺燃_C8_proposal.md](docs/王艺燃_C8_proposal.md) | 项目提案：问题、用户、KSTAR 目标、R̂ 量化成功标准、边界与非目标 |
+| [docs/王艺燃_C8_demo.md](docs/王艺燃_C8_demo.md) | Demo 说明与实跑证据：130 条消息 → 32 条提交 / 12 条 QA、分类准确率 96.15%、23 个测试全绿 |
+| [docs/王艺燃_C8_AI日志.md](docs/王艺燃_C8_AI日志.md) | 7 轮 AI 协作日志，含 124/130 条数漂移的真实失败、定位与修复 |
+| [docs/王艺燃_C8_拿来说明.md](docs/王艺燃_C8_拿来说明.md) | 6 个外部来源的拿来主义取舍：adopted / removed / improved 逐条说明 |
+| [docs/王艺燃_C8_AAR_W1.md](docs/王艺燃_C8_AAR_W1.md) | 第一周 AAR：R̂ vs R 对照、失败归因、下周迭代计划 |
+
+## 复核方式
+
+```bash
+python pipeline.py                        # 130 条消息 → 5 件产物
+python -m unittest discover -s tests -v   # Ran 23 tests ... OK
+```
